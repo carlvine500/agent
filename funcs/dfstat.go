@@ -22,8 +22,10 @@ func DeviceMetrics() (L []*model.MetricValue) {
 	for idx := range mountPoints {
 		var du *nux.DeviceUsage
 		du, err = nux.BuildDeviceUsage(mountPoints[idx][0], mountPoints[idx][1], mountPoints[idx][2])
-		if err != nil && g.Config().Debug {
-			log.Println(err)
+		if err != nil  {
+			if g.Config().Debug {
+				log.Println(err)
+			}
 			continue
 		}
 
