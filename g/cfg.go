@@ -114,10 +114,20 @@ func ParseConfig(cfg string) {
 		log.Fatalln("parse config file:", cfg, "fail:", err)
 	}
 
+	if c.Hostname == "" {
+		hostname, err := os.Hostname()
+		if err != nil {
+			log.Println("ERROR: os.Hostname() fail", err)
+		}
+		c.Hostname = hostname
+	}
+
 	lock.Lock()
 	defer lock.Unlock()
 
 	config = &c
 
 	log.Println("read config file:", cfg, "successfully")
+	bytes, _ := json.Marshal(c)
+	log.Fatalln("use -c to specify configuration file", string(bytes))
 }

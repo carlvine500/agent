@@ -2,8 +2,9 @@ package funcs
 
 import (
 	"fmt"
-	"github.com/open-falcon/common/model"
+	"github.com/domeos/agent/g"
 	"github.com/domeos/agent/nux"
+	"github.com/open-falcon/common/model"
 	"log"
 )
 
@@ -21,7 +22,7 @@ func DeviceMetrics() (L []*model.MetricValue) {
 	for idx := range mountPoints {
 		var du *nux.DeviceUsage
 		du, err = nux.BuildDeviceUsage(mountPoints[idx][0], mountPoints[idx][1], mountPoints[idx][2])
-		if err != nil {
+		if err != nil && g.Config().Debug {
 			log.Println(err)
 			continue
 		}

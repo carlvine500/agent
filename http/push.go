@@ -22,6 +22,14 @@ func configPushRoutes() {
 			return
 		}
 
+		for _, v := range metrics {
+			if v.Endpoint == "" {
+				v.Endpoint = g.Config().Hostname
+			}
+		}
+		//log.Printf("auto complete endpoint=> <Total=%d> %v\n", len(metrics), metrics[0])
+
+
 		g.SendToTransfer(metrics)
 		w.Write([]byte("success"))
 	})
