@@ -128,6 +128,6 @@ func ParseConfig(cfg string) {
 	config = &c
 
 	log.Println("read config file:", cfg, "successfully")
-	bytes, _ := json.Marshal(c)
-	log.Fatalln("use -c to specify configuration file", string(bytes))
+	//bytes, _ := json.Marshal(c)
+	//log.Fatalln("use -c to specify configuration file", string(bytes))
 }
