@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+/** 建议在linux真实环境里测试 */
 func TestMetrics(t *testing.T) {
 
 	fmt.Println("======kernel======")

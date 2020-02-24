@@ -42,6 +42,10 @@ func ListMountPoint() ([][3]string, error) {
 		fs_file := fields[1]
 		fs_vfstype := fields[2]
 
+		if strings.Contains(fs_file, "docker") {
+			continue
+		}
+
 		if _, exist := FSSPEC_IGNORE[fs_spec]; exist {
 			continue
 		}
