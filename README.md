@@ -112,3 +112,8 @@ sudo docker run -d --restart=always \
 
 
 DomeOS仓库中domeos/agent对应版本： pub.domeos.org/domeos/agent:2.5
+
+## arm
+GOOS=linux GOARCH=arm64  go build -o  falcon-agent.arm64
+make build -f Makefile.arm64v8
+make push -f Makefile.arm64v8

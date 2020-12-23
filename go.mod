@@ -1,0 +1,52 @@
+module github.com/domeos/agent
+
+require (
+	github.com/PuerkitoBio/purell v1.1.0
+	github.com/PuerkitoBio/urlesc v0.0.0-20160726150825-5bd2802263f2
+	github.com/beorn7/perks v0.0.0-20160804104726-4c0e84591b9a
+	github.com/blang/semver v3.3.0+incompatible
+	github.com/coreos/go-oidc v0.0.0-20161116201810-5a7f09ab5787
+	github.com/coreos/pkg v0.0.0-20161026222926-447b7ec906e5
+	github.com/davecgh/go-spew v1.1.0
+	github.com/docker/distribution v2.5.1+incompatible
+	github.com/domeos/kube_event_watcher v0.0.0-20171016082023-c94b41126a7a // indirect
+	github.com/emicklei/go-restful v0.0.0-20161116140610-858e58f98abd
+	github.com/ghodss/yaml v0.0.0-20161020005002-bea76d6a4713
+	github.com/go-openapi/jsonpointer v0.0.0-20161105161541-8d96a2dc6153
+	github.com/go-openapi/jsonreference v0.0.0-20161105162150-36d33bfe519e
+	github.com/go-openapi/spec v0.0.0-20161119162701-f7ae86df5bc1
+	github.com/go-openapi/swag v0.0.0-20161024024919-3b6d86cd9658
+	github.com/gogo/protobuf v0.0.0-20161105095113-8d70fb3182be
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+	github.com/golang/protobuf v0.0.0-20161117033126-8ee79997227b
+	github.com/google/cadvisor v0.0.0-20161123192213-a6ebbf9dadb8
+	github.com/google/gofuzz v0.0.0-20160201174807-fd52762d25a4
+	github.com/howeyc/gopass v0.0.0-20161003130900-f5387c492211
+	github.com/imdario/mergo v0.0.0-20160517064435-50d4dbd4eb0e
+	github.com/jonboulle/clockwork v0.0.0-20160907122059-bcac9884e750
+	github.com/mailru/easyjson v0.0.0-20161103141812-159cdb893c98
+	github.com/matttproud/golang_protobuf_extensions v1.0.1
+	github.com/open-falcon/common v0.0.0-20160912145637-b9ba65549217
+	github.com/pborman/uuid v0.0.0-20161005151609-3d4f2ba23642
+	github.com/prometheus/client_golang v0.0.0-20161124155732-575f371f7862
+	github.com/prometheus/client_model v0.0.0-20150212101744-fa8ad6fec335
+	github.com/prometheus/common v0.0.0-20161114134743-0d5de9d6d862
+	github.com/prometheus/procfs v0.0.0-20160411190841-abf152e5f3e9
+	github.com/spf13/pflag v0.0.0-20161024131444-5ccb023bc27d
+	github.com/toolkits/core v0.0.0-20141116054942-0ebf14900fe2
+	github.com/toolkits/file v0.0.0-20160325033739-a5b3c5147e07
+	github.com/toolkits/net v0.0.0-20160910085801-3f39ab6fe3ce
+	github.com/toolkits/slice v0.0.0-20141116085117-e44a80af2484
+	github.com/toolkits/sys v0.0.0-20141116093326-c2ba2f18687b
+	github.com/toolkits/time v0.0.0-20160524122720-c274716e8d7f
+	github.com/ugorji/go v0.0.0-20160928015244-faddd6128c66
+	golang.org/x/crypto v0.0.0-20161202060003-8a549a1948fc
+	golang.org/x/net v0.0.0-20161202001143-97edce0b2e42
+	golang.org/x/oauth2 v0.0.0-20161130174631-f6093e37b6cb
+	golang.org/x/sys v0.0.0-20161204224327-f5a6bd43051d
+	golang.org/x/text v0.0.0-20161130145921-5c6cf4f9a235
+	google.golang.org/appengine v0.0.0-20161115221414-ca59ef35f409
+	gopkg.in/inf.v0 v0.9.0
+	gopkg.in/yaml.v2 v2.0.0-20160928153709-a5b47d31c556
+	k8s.io/client-go v0.0.0-20161124081551-5d8c36c93cf5
+)

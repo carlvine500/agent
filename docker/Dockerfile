@@ -1,4 +1,4 @@
-FROM docker:1.8
+FROM arm64v8/docker:19.03
 
 MAINTAINER domeos
 
